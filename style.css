@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Open Sans", sans-serif;
+  background: url("images/bg-mobile.svg");
+  background-color: var(--Violet);
+  background-repeat: no-repeat;
+  padding: 35px;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 120px;
+}
+
+.mockups {
+  margin: 30px auto;
+}
+
+.about {
+  text-align: center;
+}
+
+.title {
+  font-size: 25px;
+  padding: 20px 0px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: var(--Violet);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 217px;
+  transition: ease-in-out 0.7s all;
+}
+
+button:hover {
+  background-color: var(--SoftMagenta);
+  color: #fff;
+}
+
+.footer,
+.desk-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.fa-brands,
+.desk-brand {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 10px 0px;
+  width: 40px;
+  opacity: 0.8;
+  transition: ease-in-out 0.5s all;
+}
+
+.fa-brands:hover {
+  border-color: var(--SoftMagenta);
+  color: var(--SoftMagenta);
+}
+
+.desk-footer {
+  display: none;
+}
+
+@media screen and (min-width: 950px) {
+  body {
+    background: url("images/bg-desktop.svg");
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  .about {
+    padding-left: 45px;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 35px;
+    padding: 20px 25px;
+  }
+
+  .text {
+    padding-left: 25px;
+  }
+
+  button {
+    margin-left: 25px;
+  }
+
+  .footer {
+    text-align: center;
+    display: none;
+  }
+
+  .desk-footer {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+/*400, 600*/
